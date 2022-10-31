@@ -1,7 +1,6 @@
 body {
     font-family: 'Open Sans';
     background: #F6F7F9;
-    
     --primary-100 : #D6E4FD;
     --primary-200 : #AEC8FC;
     --primary-300 : #85A8F8;
@@ -189,3 +188,4 @@ body {
     letter-spacing: -0.02em;
     color: var(--secondary-300);
 }
+/*zeub*/ 
