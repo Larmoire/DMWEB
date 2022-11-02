@@ -188,3 +188,40 @@ body {
     letter-spacing: -0.02em;
     color: var(--secondary-300);
 }
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.label{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color : var(--secondary-500);
+}
+.input{
+    box-sizing: border-box;
+    padding: 16px 32px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1px solid var(--secondary-400);
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color : var(--secondary-300);
+}
+input::placeholder{
+    color : var(--secondary-300);
+}
+.input:not(:placeholder-shown){
+    color: var(--secondary-900);
+}
+.input:focus{
+    outline: none;
+}
