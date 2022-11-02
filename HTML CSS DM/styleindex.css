@@ -192,6 +192,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    justify-content: space-between;
 }
 .label{
     font-family: 'Open Sans';
@@ -224,4 +225,26 @@ input::placeholder{
 }
 .input:focus{
     outline: none;
+}
+select{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 13px;
+    border: 1px solid var(--secondary-400);
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+option{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: var(--secondary-900);
 }
