@@ -21,8 +21,56 @@ body {
     --secondary-800 : #080C19;
     --secondary-900 : #040815;
 }
-
-
+@media screen and (max-width: 800px) {
+    
+}
+.navbartop{
+    height: 124px;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    padding: 40px 60px;
+    background: #FFFFFF;
+}
+.Voituragogo{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    color: var(--primary-500);
+}
+.content{
+    background: #F6F7F9;
+}
+.catalogue{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 64px 34px 64px;
+}
+.fav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+}
+.textfav{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    color: var(--secondary-300);
+    padding : 34px 0px 30px 0px;
+}
+.voitures{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    flex-flow: row wrap;
+}
 .title h1 {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -35,6 +83,8 @@ body {
     padding: 40px 60px;
 }
 * {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
     box-sizing: border-box;
     padding : 0;
     margin : 0;
@@ -145,8 +195,6 @@ body {
     gap: 6px;
 }
 .textplacecar{
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
@@ -167,8 +215,6 @@ body {
     gap: 4px;
 }
 .pricetext{
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
@@ -178,8 +224,6 @@ body {
     letter-spacing: -0.03em;
 }
 .priceday{
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
@@ -195,22 +239,17 @@ body {
     justify-content: space-between;
 }
 .label{
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
     color : var(--secondary-500);
 }
 .input{
-    box-sizing: border-box;
     padding: 16px 32px;
     gap: 10px;
     background: #FFFFFF;
     border: 1px solid var(--secondary-400);
     border-radius: 10px;
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
@@ -227,19 +266,15 @@ input::placeholder{
     outline: none;
 }
 select{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 16px 32px;
-    gap: 13px;
     border: 1px solid var(--secondary-400);
     border-radius: 10px;
     background: #FFFFFF;
 }
+select:focus{
+    outline: none;
+}
 option{
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
