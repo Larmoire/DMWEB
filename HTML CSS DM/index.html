@@ -1,73 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voituragogo</title>
-    <link rel="stylesheet" href="styleindex.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
-</head>
-<body>
-    </br><button class="button primarybutton">Louer</button></br>
-    <button class="button primarybutton" disabled>Louer</button></br>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voituragogo</title>
+        <link rel="stylesheet" href="styleindex.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        </br><button class="button primarybutton">Louer</button></br>
+        <button class="button primarybutton" disabled>Louer</button></br>
 
-    <!-- Carte de voiture -->
-    <div class="cartevoiture">
-        <div class="voiture">
-            <div class="nomvoiture">CR - V</div>
-            <div class="typevoiture">SUV</div>
-        </div>
-        <div class="contains">
-        <div class="imagevoiture">
-            <img src="imagesVoitures/CR-V.png" alt="image de voiture">
-        </div>
-            <div class="specs">
-                <div class="gas">
-                    <div class="imggas">
-                        <img src="Vectorimggas.png" alt="gas icon">
+        <!-- Carte de voiture -->
+        <div class="cartevoiture">
+            <div class="voiture">
+                <div class="nomvoiture">CR - V</div>
+                <div class="typevoiture">SUV</div>
+            </div>
+            <div class="contains">
+            <div class="imagevoiture">
+                <img src="imagesVoitures/CR-V.png" alt="image de voiture">
+            </div>
+                <div class="specs">
+                    <div class="gas">
+                        <div class="imggas">
+                            <img src="Vectorimggas.png" alt="gas icon">
+                        </div>
+                        <div class="textgas">80L</div>
                     </div>
-                    <div class="textgas">80L</div>
+                    <div class="cartype">
+                        <div class="logocartype">
+                            <img src="Carlogocartype.png" alt="logocartype">
+                        </div>
+                        <div class="textcartype">Manuel</div>
+                    </div>
+                    <div class="placecar">
+                        <div class="logoplacecar">
+                            <img src="profile-2userlogoplacecar.png" alt="logoplacecar">
+                        </div>
+                        <div class="textplacecar">6 places</div>
+                    </div>
                 </div>
-                <div class="cartype">
-                    <div class="logocartype">
-                        <img src="Carlogocartype.png" alt="logocartype">
-                    </div>
-                    <div class="textcartype">Manuel</div>
+            </div>
+            <div class="actionbar">
+                <div class="pricetag">
+                    <div class="pricetext">80.0/ </div>
+                    <div class="priceday">day</div>
                 </div>
-                <div class="placecar">
-                    <div class="logoplacecar">
-                        <img src="profile-2userlogoplacecar.png" alt="logoplacecar">
+                <button class="button primarybutton">Louer</button>
+            </div>
+        </div>
+        <!-- Input placeholder -->
+        <div class="inputs">
+            <label for="text-input">Label</label>
+            <input class="input" id="text-input" type="text" placeholder="Placeholder" />
+        </div>
+        <!-- Input filled -->
+        <div class="inputs">
+            <label for="text-filled">Label</label>
+            <input class="input" id="text-filled" type="text" value="Contenu"/>
+        </div>
+        <!-- Selecteur -->
+        <div class="inputs">
+            <label for="selector">Label</label>
+            <select name="Option" id="selector">
+            <option value="Option">Option</option>
+            </select>
+        </div>
+        <!--PAYMENT-->
+        <div class="bloc">
+            <div class="methodedepaiement">
+                <div class="payglob">
+                    <div class="radioandlogo">
+                        <div class="radioandlabel">
+                            <input type="radio" id="cc" name="pay">
+                            <label for="cc">Carte de crédit</label>
+                        </div>
+                        <div class="logo"><img src="logoPay/Visa.png" alt="image de voiture"></div>
                     </div>
-                    <div class="textplacecar">6 places</div>
+                    <div class="cartedecredit">
+                        <p>Yo</p>
+                    </div>
+                </div>
+                <div class="payglob">
+                    <div>
+                        <input type="radio" id="pp" name="pay">
+                        <label for="pp">Paypal</label>
+                    </div>
+                </div>
+                <div class="payglob">
+                    <div>
+                        <input type="radio" id="bc" name="pay">
+                        <label for="bc">Bitcoin</label>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="actionbar">
-            <div class="pricetag">
-                <div class="pricetext">80.0/ </div>
-                <div class="priceday">day</div>
-            </div>
-            <button class="button primarybutton">Louer</button>
-        </div>
-    </div>
-    <!-- Input placeholder -->
-    <div class="inputs">
-        <label for="text-input">Label</label>
-        <input class="input" id="text-input" type="text" placeholder="Placeholder" />
-    </div>
-    <!-- Input filled -->
-    <div class="inputs">
-        <label for="text-filled">Label</label>
-        <input class="input" id="text-filled" type="text" value="Contenu"/>
-    </div>
-    <!-- Selecteur -->
-    <div class="inputs">
-        <label for="selector">Label</label>
-        <select name="Option" id="selector">
-        <option value="Option">Option</option>
-    </div>
-</body>
+    </body>
 </html>

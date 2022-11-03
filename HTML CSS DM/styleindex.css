@@ -270,10 +270,9 @@ label{
     font-size: 16px;
     line-height: 150%;
     color : var(--secondary-500);
-    font-weight: 600;
     letter-spacing: -0.02em;
 }
-input{
+input[type="text"],input[type="select"],input[type="time"],input[type="date"],input[type="number"]{
     padding: 16px 32px;
     background: #FFFFFF;
     border: 1px solid var(--secondary-400);
@@ -317,7 +316,7 @@ option{
     gap: 32px;
     padding: 33px 0px 0px 33px
 }
-.infoperso {
+.bloc {
     width: 60%;
     background: #FFFFFF;
     display: flex;
@@ -325,14 +324,6 @@ option{
     border-radius: 10px;
     padding: 24px 24px 29px 24px;
     gap: 33px;
-}
-.location{
-    width: 60%;
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    padding: 24px 24px 29px 24px;
 }
 .title{
     font-weight: 700;
@@ -372,6 +363,30 @@ option{
 .startendloc{
     padding: 32px 0px 24px 0px;
 }
+.cartedecredit{
+    display: none;
+}
+input#cc:checked{
+    
+}
+.methodedepaiement{
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.payglob{
+    background: var(--secondary-100);
+    border-radius: 10px;
+    padding: 24px;
+}
+.radioandlogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
