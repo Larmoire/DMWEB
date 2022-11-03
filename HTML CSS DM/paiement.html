@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voituragogo</title>
+    <link rel="stylesheet" href="styleindex.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- Voituragogo -->
+    <div class="navbartop">
+        <div class="Voituragogo">Voituragogo</div>
+    </div>
+    <div class="paiement">
+        <div class="infoperso">
+            <div class="titlesub">
+                <div class="title">Informations personnelles</div>
+                <div class="subtitle">Merci de remplir vos informations personnelles</div>
+            </div>
+            <div class="formulairesinfoperso">
+                <div class="nomnum">
+                    <div class="inputs">
+                        <label for="nom">Nom</label>
+                        <input id="nom" type="text" placeholder="Julien Evrard" required />
+                    </div>
+                    <div class="inputs">
+                        <label for="tel">Numéro de téléphone</label>
+                        <input id="tel" type="number" placeholder="012345678" required/>
+                    </div>
+                </div>
+                <div class="adresseville">
+                    <div class="inputs">
+                        <label for="adresse">Adresse</label>
+                        <input id="adresse" type="text" placeholder="5 Rue des Epinettes" required />
+                    </div>
+                    <div class="inputs">
+                        <label for="ville">Ville</label>
+                        <input id="ville" type="text" placeholder="Nantes" required/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location">
+            <div class="titlesub">
+                <div class="title">Location</div>
+                <div class="subtitle">Merci de préciser les dates de location</div>
+            </div>
+            <div class="startendloc">
+                <label for ="">Début de location</label>
+            </div>
+            <div class="formulairesinfoperso">
+                <div class="adresseville">
+                    <div class="villeheure">
+                        <div class="inputs">
+                            <label for="villestart">Ville</label>
+                            <select name="villestart" id="villestart" required>
+                                <option value="Sélectionnez votre ville">Sélectionnez votre ville</option>
+                                <option value="Paris">Paris</option>
+                                <option value="Nantes">Nantes</option>
+                                <option value="Bordeaux">Bordeaux</option>
+                                <option value="Marseille">Marseille</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <label for="heurestart">Heure</label>
+                            <input id="heurestart" type="time" required />
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <label for="datestart">Date</label>
+                        <input class="input" id="datestart" type="date" required />
+                    </div>
+                </div>
+            </div>
+            <div class="startendloc">
+                <label for ="">Fin de location</label>
+            </div>
+            <div class="formulairesinfoperso">
+                <div class="adresseville">
+                    <div class="villeheure">
+                        <div class="inputs">
+                            <label for="villeend">Ville</label>
+                            <select name="villeend" id="villeend" required>
+                                <option value="Sélectionnez votre ville">Sélectionnez votre ville</option>
+                                <option value="Paris">Paris</option>
+                                <option value="Nantes">Nantes</option>
+                                <option value="Bordeaux">Bordeaux</option>
+                                <option value="Marseille">Marseille</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <label for="heureend">Heure</label>
+                            <input id="heureend" type="time" required />
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <label for="dateend">Date</label>
+                        <input class="input" id="dateend" type="date" required />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="methodepaiement">
+
+        </div>
+        <div class="confirmation">
+
+        </div>
+    </div>
+    <div class="paiementresume">
+
+    </div>
+
+</body>
