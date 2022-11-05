@@ -110,6 +110,17 @@ a:link{
     border-radius: 4px;
     border : 1px solid transparent;
 }
+.apply{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 16px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1px solid var(--secondary-400);
+    border-radius: 4px;
+}
 .primarybutton:enabled {
     background: var(--primary-500);
 
@@ -242,6 +253,13 @@ a:link{
     gap: 16px;
 }
 label{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color : var(--secondary-500);
+    letter-spacing: -0.02em;
+}
+.label{
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -412,7 +430,63 @@ option{
     gap: 96px;
     width: auto;
 }
-
+.imgvoitandname{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.namevoitureresume{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    color: var(--secondary-500);
+}
+.line{
+    border: 1px solid #E0E9F4;
+}
+.soustotandtax{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.soustot{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: var(--secondary-300);
+}
+.textandprice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.prom{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.finalprice{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: var(--secondary-500);
+}
+.titlesubandprice{
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+}
 @media screen and (max-width: 800px) {
     .cartevoiture {
         min-width: 350px;
