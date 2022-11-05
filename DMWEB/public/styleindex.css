@@ -418,6 +418,9 @@ option{
     flex-direction: row;
     justify-content: space-between;
 }
+.logocb{
+    float: right;
+}
 .confirmationchecks{
     display: flex;
     flex-direction: column;
