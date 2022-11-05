@@ -28,6 +28,12 @@ body {
     padding: 40px 60px;
     background: #FFFFFF;
 }
+.navbartop2{
+    height: 124px;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    padding: 40px 60px;
+    background: #FFFFFF;
+}
 .Voituragogo{
     font-weight: 700;
     font-size: 32px;
