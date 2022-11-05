@@ -400,7 +400,7 @@ option{
 }
 #cc:checked~.cartedecredit{
     padding-top: 32px;
-    display: flex;
+    display: block;
 }
 .methodedepaiement{
     gap: 24px;
