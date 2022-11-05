@@ -488,6 +488,9 @@ option{
     justify-content: space-between;
 }
 @media screen and (max-width: 800px) {
+    .catalogue{
+        padding: 0px 24px 24px 24px;
+    }
     .cartevoiture {
         min-width: 425px;
         width: 100%;
