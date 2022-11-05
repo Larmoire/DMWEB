@@ -95,6 +95,7 @@ body {
 a:link{
     text-decoration: none;
 }
+
 .button {
     font-size: 14px;
     cursor: pointer;
@@ -233,6 +234,185 @@ a:link{
     letter-spacing: -0.02em;
     color: var(--secondary-300);
 }
+
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+label{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color : var(--secondary-500);
+    letter-spacing: -0.02em;
+}
+input[type="text"],input[type="select"],input[type="time"],input[type="date"],input[type="number"],input[type="month"]{
+    padding: 16px 32px;
+    background: #FFFFFF;
+    border: 1px solid var(--secondary-400);
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color : var(--secondary-300);
+    width: 100%;
+}
+input::placeholder{
+    color : var(--secondary-300);
+}
+input:not(:placeholder-shown){
+    color: var(--secondary-900);
+}
+input:focus{
+    outline: none;
+}
+select{
+    padding: 16px 32px;
+    border: 1px solid var(--secondary-400);
+    border-radius: 10px;
+    background: #FFFFFF;
+    width: 100%;
+}
+date{
+    width: 100%;
+}
+select:focus{
+    outline: none;
+}
+option{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: var(--secondary-900);
+}
+.paiementcontent{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.blocpaiement {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 0px 24px 32px;
+    max-width: 60%;
+}
+.bloc {
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 24px 24px 29px 24px;
+    gap: 33px;
+}
+.blocresume{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px 0px 0px;
+    gap: 33px;
+    max-width: 40%;
+}
+.paiementresume{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 33px;
+    min-width: 600px;
+}
+.titlesub{
+    gap:3px;
+}
+.title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    color: var(--secondary-500);
+}
+.subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: var(--secondary-300);
+}
+.formulairesinfoperso{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+.nomnum,
+.adresseville{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.villeheure{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+.startendloc{
+    padding: 32px 0px 24px 0px;
+}
+.cartedecredit{
+    padding-top: 32px;
+    display: flex;
+}
+.methodedepaiement{
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.payglob{
+    background: var(--secondary-100);
+    border-radius: 10px;
+    padding: 24px;
+}
+.radioandlogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.confirmationchecks{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+.txtandchecks{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.confirmcard{
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    width: auto;
+}
+
 @media screen and (max-width: 800px) {
     .cartevoiture {
         min-width: 350px;
@@ -259,132 +439,6 @@ a:link{
         justify-content: unset;
     }
 }
-.inputs{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-label{
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    color : var(--secondary-500);
-    letter-spacing: -0.02em;
-}
-input[type="text"],input[type="select"],input[type="time"],input[type="date"],input[type="number"]{
-    padding: 16px 32px;
-    background: #FFFFFF;
-    border: 1px solid var(--secondary-400);
-    border-radius: 10px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    letter-spacing: -0.02em;
-    color : var(--secondary-300);
-}
-input::placeholder{
-    color : var(--secondary-300);
-}
-input:not(:placeholder-shown){
-    color: var(--secondary-900);
-}
-input:focus{
-    outline: none;
-}
-select{
-    padding: 16px 32px;
-    border: 1px solid var(--secondary-400);
-    border-radius: 10px;
-    background: #FFFFFF;
-}
-select:focus{
-    outline: none;
-}
-option{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.02em;
-    color: var(--secondary-900);
-}
-.paiement {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding: 33px 0px 0px 33px
-}
-.bloc {
-    width: 60%;
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    padding: 24px 24px 29px 24px;
-    gap: 33px;
-}
-.title{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 150%;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.03em;
-    color: var(--secondary-500);
-}
-.subtitle{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.02em;
-    color: var(--secondary-300);
-}
-.formulairesinfoperso{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.nomnum,
-.adresseville{
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-}
-.villeheure{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    width: 100%;
-}
-.startendloc{
-    padding: 32px 0px 24px 0px;
-}
-.cartedecredit{
-    display: none;
-}
-input#cc:checked{
-    
-}
-.methodedepaiement{
-    gap: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.payglob{
-    background: var(--secondary-100);
-    border-radius: 10px;
-    padding: 24px;
-}
-.radioandlogo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 
 input::-webkit-outer-spin-button,
@@ -403,5 +457,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -webkit-appearance: none;
 }
 input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+input[type="month"]::-webkit-calendar-picker-indicator {
     background: none;
 }
