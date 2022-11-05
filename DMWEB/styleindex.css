@@ -489,7 +489,8 @@ option{
 }
 @media screen and (max-width: 800px) {
     .cartevoiture {
-        min-width: 350px;
+        min-width: 425px;
+        width: 100%;
     }
     .nomvoiture{
         font-size: 16px;
@@ -500,7 +501,7 @@ option{
         letter-spacing: -0.02em;
     }
     .imagevoiture{
-        padding: 17px 65px 48px 0px;
+        padding: 17px 0px 48px 16px;
     }
     .contains{
         justify-content: space-between;
@@ -575,7 +576,7 @@ option{
     }
     .navbartop{
         height: 92px;
-        padding: 32px 0px 32px 25px;
+        padding: 32px 1000px 32px 25px;
     }
     .Voituragogo{
         font-size: 24px;
