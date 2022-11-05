@@ -512,6 +512,75 @@ option{
         flex-direction: column;
         justify-content: unset;
     }
+    .title{
+        font-size: 16px;
+    }
+    .subtitle{
+        font-size: 12px;
+    }
+    .namevoitureresume{
+        font-size: 20px;
+    }
+    .paiementcontent{
+        flex-direction: column-reverse;
+    }
+    .blocresume{
+        padding: 32px 24px 0px 24px;
+        max-width: unset;
+    }
+    .blocpaiement{
+        padding: 0px 24px 32px 24px;
+        width: 100%;
+        max-width: unset;
+    }
+    .imgvoitandname{
+        width: unset;
+        gap: 16px;
+    }
+    .soustot{
+        font-size: 12px;
+    }
+    label{
+        font-size: 12px;
+    }
+    input[type="text"], input[type="select"], input[type="time"], input[type="date"], input[type="number"], input[type="month"]{
+        font-size: 12px;
+    }
+    .label{
+        font-size: 14px;
+    }
+    .finalprice{
+        font-size: 20px;
+    }
+    .nomnum,
+    .adresseville{
+        flex-direction: column;
+    }
+    .confirmationchecks{
+        gap:20px;
+        font-size: 12px;
+    }
+    .check{
+        background: var(--secondary-100);
+        border-radius: 10px;
+    }
+    .check>Label{
+        padding: 10px 16px 10px 48px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+        color: #1F2544;
+    }
+    .confirmcard{
+        gap: 20px;
+    }
+    .navbartop{
+        height: 92px;
+        padding: 32px 0px 32px 25px;
+    }
+    .Voituragogo{
+        font-size: 24px;
+    }
 }
 
 
