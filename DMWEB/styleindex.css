@@ -386,11 +386,20 @@ option{
     flex-direction: row;
     gap: 32px;
 }
-.villeheure{
+.villedateheure{
     display: flex;
     flex-direction: column;
     gap: 32px;
     width: 100%;
+}
+.villedate{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+}
+.none{
+    display: unset;
 }
 .startendloc{
     padding: 32px 0px 24px 0px;
@@ -503,6 +512,9 @@ option{
     justify-content: space-between;
 }
 @media screen and (max-width: 800px) {
+    .none{
+        display: none;
+    }
     .catalogue{
         padding: 0px 24px 24px 24px;
     }
@@ -572,6 +584,9 @@ option{
     }
     .nomnum,
     .adresseville{
+        flex-direction: column;
+    }
+    .villedate {
         flex-direction: column;
     }
     .confirmationchecks{
