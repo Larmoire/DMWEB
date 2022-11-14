@@ -7,7 +7,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static('DMWEB/public'))
 app.get('/', function (req, res) {
-   res.sendFile('DMWEB/accueil.html', { root: __dirname })
+   res.sendFile('DMWEB/index.html', { root: __dirname })
 })
 app.get('/', function (req, res) {
    res.sendFile('DMWEB/paiement.html', { root: __dirname })
