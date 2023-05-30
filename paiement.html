@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voituragogo</title>
+        <link rel="stylesheet" href="styleindex.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Voituragogo -->
+        <div class="navbartop2">
+            <div class="Voituragogo">Voituragogo</div>
+        </div>
+        <div class="content">
+            <form>
+                <div class="paiementcontent">
+                    <div class="blocpaiement">
+                        <!--Bloc info perso-->
+                        <div class="bloc">
+                            <div class="titlesub">
+                                <div class="title">Informations personnelles</div>
+                                <div class="subtitle">Merci de remplir vos informations personnelles</div>
+                            </div>
+                            <div class="formulairesinfoperso">
+                                <div class="nomnum">
+                                    <div class="inputs">
+                                        <label for="nom">Nom</label>
+                                        <input id="nom" type="text" placeholder="Julien Evrard" required />
+                                    </div>
+                                    <div class="inputs">
+                                        <label for="tel">Numéro de téléphone</label>
+                                        <input id="tel" type="number" placeholder="012345678" required/>
+                                    </div>
+                                </div>
+                                <div class="adresseville">
+                                    <div class="inputs">
+                                        <label for="adresse">Adresse</label>
+                                        <input id="adresse" type="text" placeholder="5 Rue des Epinettes" required />
+                                    </div>
+                                    <div class="inputs">
+                                        <label for="ville">Ville</label>
+                                        <input id="ville" type="text" placeholder="Nantes" required/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Bloc Location-->
+                        <div class="bloc">
+                            <div class="titlesub">
+                                <div class="title">Location</div>
+                                <div class="subtitle">Merci de préciser les dates de location</div>
+                            </div>
+                            <div class="startendloc">
+                                <label for ="">Début de location</label>
+                            </div>
+                            <div class="formulairesinfoperso">
+                                <div class="adresseville">
+                                    <div class="villedateheure">
+                                        <div class="villedate">
+                                            <div class="inputs">
+                                                <label for="villestart">Ville</label>
+                                                <select name="villestart" id="villestart" required>
+                                                    <option value="Sélectionnez votre ville">Sélectionnez votre ville</option>
+                                                    <option value="Paris">Paris</option>
+                                                    <option value="Nantes">Nantes</option>
+                                                    <option value="Bordeaux">Bordeaux</option>
+                                                    <option value="Marseille">Marseille</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputs">
+                                                <label for="datestart">Date</label>
+                                                <input class="input" id="datestart" type="date" required />
+                                            </div>
+                                        </div>
+                                        <div class="villedate">
+                                            <div class="inputs">
+                                                <label for="heureend">Heure</label>
+                                                <input id="heureend" type="time" required />
+                                            </div>
+                                            <div class="inputs none"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="startendloc">
+                                <label for ="">Fin de location</label>
+                            </div>
+                            <div class="formulairesinfoperso">
+                                <div class="adresseville">
+                                    <div class="villedateheure">
+                                        <div class="villedate">
+                                            <div class="inputs">
+                                                <label for="villeend">Ville</label>
+                                                <select name="villeend" id="villeend" required>
+                                                    <option value="Sélectionnez votre ville">Sélectionnez votre ville</option>
+                                                    <option value="Paris">Paris</option>
+                                                    <option value="Nantes">Nantes</option>
+                                                    <option value="Bordeaux">Bordeaux</option>
+                                                    <option value="Marseille">Marseille</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputs">
+                                                <label for="dateend">Date</label>
+                                                <input class="input" id="dateend" type="date" required />
+                                            </div>
+                                        </div>
+                                        <div class="villedate">
+                                            <div class="inputs">
+                                                <label for="heureend">Heure</label>
+                                                <input id="heureend" type="time" required />
+                                            </div>
+                                            <div class="inputs none"></div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <!--Bloc méthode paiement-->
+                        <div class="bloc">
+                            <div class="titlesub">
+                                <div class="title">Méthode de paiement</div>
+                                <div class="subtitle">Merci de renseigner vos informations de paiement</div>
+                            </div>
+                            <div class="methodedepaiement">
+                                <div class="payglob">
+                                    <input type="radio" id="cc" name="pay" checked>
+                                    <label for="cc" id="labelpay">Carte de crédit</label>
+                                    <div class="logocb"><img src="logoPay/Visa.png" alt="logo Visa"></div>
+                                    <div class="cartedecredit">
+                                        <div class="formulairesinfoperso">
+                                            <div class="nomnum">
+                                                <div class="inputs">
+                                                    <label  for="numcb">Numéro de carte</label>
+                                                    <input id="numcb" type="number" placeholder="1234 5678 1234 5678" maxlength="16"/>
+                                                </div>
+                                                <div class="inputs">
+                                                    <label for="dateexpi">Date d'expiration</label>
+                                                    <input id="dateexpi" type="month" placeholder="mm/aa"/>
+                                                </div>
+                                            </div>
+                                            <div class="adresseville">
+                                                <div class="inputs">
+                                                    <label for="cardname">Nom sur la carte</label>
+                                                    <input id="cardname" type="text" placeholder="Julien Evrard" />
+                                                </div>
+                                                <div class="inputs">
+                                                    <label for="cvc">CVC</label>
+                                                    <input id="cvc" type="number" placeholder="123" maxlength="3"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payglob">
+                                    <div class="radioandlogo">
+                                        <div class="radioandlabel">
+                                            <input type="radio" id="pp" name="pay">
+                                            <label for="pp" id="labelpay">Paypal</label>
+                                        </div>
+                                        <div class="logo"><img src="logoPay/PayPal.png" alt="logo Paypal"></div>
+                                    </div>
+                                </div>
+                                <div class="payglob">
+                                    <div class="radioandlogo">
+                                        <div class="radioandlabel">
+                                            <input type="radio" id="bc" name="pay">
+                                            <label for="bc" id="labelpay">Bitcoin</label>
+                                        </div>
+                                        <div class="logo"><img src="logoPay/Bitcoin.png" alt="logo Bitcoin"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Bloc de confirmation-->
+                        <div class="bloc">
+                            <div class="confirmcard">
+                                <div class="txtandchecks">
+                                    <div class="titlesub">
+                                        <div class="title">Confirmation</div>
+                                        <div class="subtitle">Nous arrivons vers la fin. Juste quelques clics et votre location est prête !</div>
+                                    </div>
+                                    <div class="confirmationchecks">
+                                        <div class="check">
+                                            <input type="checkbox" id="offrespromo" name="offrespromo">
+                                            <label for="offrespromo">J’accepte de recevoir des offres promotionnelles.</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" id="conditionvente" name="conditionvente" required>
+                                            <label for="conditionvente">J’accepte les conditions de vente et la politique privée du site.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="confirmbouton">
+                                    <button type="submit" class="button primarybutton">Louer
+                                </div>
+                            </div>
+                        </div>
+                </form>
+                </div>
+                <div class="blocresume">
+                    <!--Bloc résumé-->
+                    <div class="bloc">
+                        <div class="titlesub">
+                            <div class="title">Résumé de la location</div>
+                            <div class="subtitle">Les prix peuvent changer selon la durée de la location et le prix de la voiture.</div>
+                        </div>
+                        <div class="imgvoitandname">
+                            <div class="imagevoitureresume">
+                                <img src="imagesVoitures/Look.png" alt="image de voiture">
+                            </div>
+                            <div class="namevoitureresume">
+                                Nissan GT - R
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="soustotandtax">
+                            <div class="textandprice">
+                                <div class="soustot">Sous-total</div>
+                                <label>80€</label>
+                            </div>
+                            <div class="textandprice">
+                                <div class="soustot">Taxes</div>
+                                <label>0€</label>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="prom">
+                                <div class="inputs">
+                                    <label for="codepromo">Code promo</label>
+                                    <input class="input" id="codepromo" type="text" placeholder="XXXXXX" />
+                                </div>
+                                <div>
+                                <button type="submit" class="apply" id="apply" name="apply"><div class="label">Appliquer</div></button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="titlesubandprice">
+                            <div class="titlesub">
+                                <div class="title">Prix total</div>
+                                <div class="subtitle">Prix total incluant les remises</div>
+                            </div>
+                            <div class="finalprice">80€</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
